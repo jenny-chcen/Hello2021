@@ -13,11 +13,17 @@ class MainActivity : AppCompatActivity() {
         txv.text = "Hello Jenny~"
 
         TestMaster()
+        TestDEV() //呼叫方法
     }
 
     fun TestMaster(){
         var txv:TextView = findViewById<TextView>(R.id.txv)
         txv.text = "Master分支"
+    }
+
+    fun TestDEV(){
+        var txv:TextView = findViewById<TextView>(R.id.txv)
+        txv.text = "Dev分支"
     }
 
 }
